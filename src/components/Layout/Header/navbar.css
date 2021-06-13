@@ -1,5 +1,7 @@
-.navbar {
-    background-color: #c2c2c2;
+/* .navbar {
+    background: rgb(6,3,57);
+    background: linear-gradient(180deg, rgba(6,3,57,1) 0%, rgba(28,64,71,1) 100%);
+   color: white;
 }
 
 .navbar-container {
@@ -11,11 +13,11 @@
 .navbar-container li {
     list-style: none;
     margin: 0 10px;
-    color: #000;
+  
     border-bottom: 3px solid transparent;
 }
 
 .navbar-container li:hover {
     border-bottom: 3px solid red;
 }
-
+ */
