@@ -1,6 +1,7 @@
 import React from 'react'
 import { NavBar } from './Header/NavBar'
 import { Footer } from './Footer'
+import { CartWidget } from './CartWidget/CartWidget'
 
 const Layout = ({children}) => {
 
@@ -11,6 +12,7 @@ const Layout = ({children}) => {
     return(
         <>
             <NavBar />
+            <CartWidget />
             {children}
             <Footer />
         </>

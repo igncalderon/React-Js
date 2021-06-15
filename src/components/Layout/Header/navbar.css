@@ -2,23 +2,42 @@
     background: rgb(6,3,57);
     background: linear-gradient(180deg, rgba(6,3,57,1) 0%, rgba(28,64,71,1) 100%);
    color: white;
+   display: flex;
+   flex-direction: column;
+}
+.carrito{
+  display: flex;
+  flex-direction: row;
+  
+}
+.icon-font{
+  padding: 0 0 5px 0;
+  margin: 0 5px;
+}
+.iconos{
+  width: 28%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
 }
 nav h2{
   text-align: center;
-  padding: 15px;
+  padding: 6px 0px 4px 0px;
   letter-spacing: 3px;
 }
 .navbar-container {
     display: flex;
-    flex-direction: row;
-    padding: 10px 0;
-    justify-content: center;
+    flex-flow: nowrap wrap;
+    justify-content: flex-end;
     align-items: center;
     gap:5%;
     font-weight: bolder;
+    width: 70%;
 }
 
-.navbar-container li {
+.carrito li{
     list-style: none;
     margin: 0 10px;
     margin-bottom: 15px;

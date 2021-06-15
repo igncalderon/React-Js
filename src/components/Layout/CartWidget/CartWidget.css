@@ -1,0 +1,16 @@
+.cartWidget{
+ background-color: #c2c2c2;   
+ padding: 5px 0 5px 0;
+}
+.list-CartWidget{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+div ul li{
+    list-style: none;
+    row-gap: 10px;
+    
+}
