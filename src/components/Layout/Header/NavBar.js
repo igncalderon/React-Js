@@ -1,7 +1,7 @@
 import React from 'react'
 import './navbar.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faShoppingCart, faSignInAlt} from '@fortawesome/free-solid-svg-icons'
+import '../CartWidget/CartWidget'
+import { CartWidget } from '../CartWidget/CartWidget'
 const NavBar = () => {
 
     // Creamos nuestro nav para usarlo en el Layout. Por ahora solo tiene un menu de navegacion,
@@ -17,13 +17,7 @@ const NavBar = () => {
                 <li><a>SAPPHIRE</a></li>
                 <li><a>NVIDIA</a></li>               
             </ul>
-                <div className="iconos">
-                    <FontAwesomeIcon icon={faShoppingCart} className="icon-font"/>
-                    <FontAwesomeIcon icon={faSignInAlt} className="icon-font"/>
-                    {/* <p>Log In</p>
-                    <p>Carrito</p>
-                    <p>Registro</p> */}
-               </div>
+               <CartWidget />
             </div>
         </nav>
     )
