@@ -5,7 +5,7 @@ const Footer = () => {
     // Creamos el footer para usarlo en Layout
 
     return(
-        <footer>Footer</footer>
+        <footer>Footer COMPUCOMPS</footer>
     )
 }
 
