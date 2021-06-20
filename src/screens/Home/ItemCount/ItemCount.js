@@ -1,4 +1,3 @@
-import { faBreadSlice } from '@fortawesome/free-solid-svg-icons';
 import React from 'react'
 import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'

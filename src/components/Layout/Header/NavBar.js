@@ -8,8 +8,7 @@ import {faBars, faTimes} from '@fortawesome/free-solid-svg-icons'
 
 const NavBar = () => {
     let mainMenu = document.querySelector('.carrito');
-    let abrirMenu = document.querySelector('.openMenu');
-    let closeMenu = document.querySelector('.closeMenu');
+    
 
     const mostrar = () =>{
         // mainMenu.style.display = 'flex'
