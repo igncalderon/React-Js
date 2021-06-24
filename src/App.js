@@ -1,5 +1,5 @@
 import './App.css';
-import { Home } from './screens'
+import { ItemList } from './screens'
 // import { Laptops } from './screens'
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
   
   return (
     <>
-      <Home />
+      <ItemList />
       {/* <Laptops /> */}
     </>
   );
