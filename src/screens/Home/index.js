@@ -80,4 +80,4 @@ const ItemList = () => {
     )
 }
 
-export { ItemList }
+export { ItemList, catalogo }

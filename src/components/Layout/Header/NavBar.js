@@ -4,12 +4,11 @@ import '../CartWidget/CartWidget'
 import { CartWidget } from '../CartWidget/CartWidget'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faBars, faTimes} from '@fortawesome/free-solid-svg-icons'
-
+import { NavLink, useParams } from 'react-router-dom'
 
 const NavBar = () => {
     let mainMenu = document.querySelector('.carrito');
-    
-
+    const { categoriaId } = useParams()
     const mostrar = () =>{
         // mainMenu.style.display = 'flex'
         // mainMenu.style.top = '0'
@@ -23,14 +22,14 @@ const NavBar = () => {
 
     return(
         <nav className="navbar stroke">
-            <h2>COMPUCOMPS</h2>
+            <h2><NavLink className ='titulo-marca' to='/'>COMPUCOMPS</NavLink></h2>
             <div className='openMenu' onClick={mostrar}><FontAwesomeIcon icon={faBars} className="fa fa-bars"/></div>
             <div className="carrito">
                 <ul className="navbar-container">
-                    <li><a>GIGABYTE</a></li>
-                    <li><a>MSI</a></li>
-                    <li><a>SAPPHIRE</a></li>
-                    <li><a>NVIDIA</a></li>               
+                    <li><NavLink activeClassName='categoria-activa' to='/catalogo/gigabyte'>GIGABYTE</NavLink></li>
+                    <li><NavLink activeClassName='categoria-activa' to='/catalogo/msi'>MSI</NavLink></li>
+                    <li><NavLink activeClassName='categoria-activa' to='/catalogo/sapphire'>SAPPHIRE</NavLink></li>
+                    <li><NavLink activeClassName='categoria-activa' to='/catalogo/nvidia'>NVIDIA</NavLink></li>               
                 </ul>
                <CartWidget />
                <div className='closeMenu' onClick={cerrar}><FontAwesomeIcon icon={faTimes} className="fa fa-times"/></div>

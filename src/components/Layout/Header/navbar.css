@@ -22,6 +22,10 @@
   align-items: center;
   padding: 10px;
 }
+.titulo-marca{
+  text-decoration: none;
+  color: white;
+}
 nav h2{
   text-align: center;
   padding: 6px 0px 4px 0px;
@@ -42,6 +46,9 @@ nav h2{
     margin: 0 10px;
     margin-bottom: 15px;
     letter-spacing: 3px;
+}
+.categoria-activa{
+  color:white;
 }
 
 .stroke ul li a{

@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import '../home.css'
 import { ItemCount } from '../ItemCount/ItemCount'
-// import { ItemCount } from '../ItemCount'
+
 
 
 const Item = ({id, title, price, pictureUrl}) => {
