@@ -7,7 +7,7 @@ import '../home.css'
 
 let cantidad = 1;
 
-const ItemCount = ({stock, initial}) => {
+const ItemCount = ({stock, initial, id}) => {
     
     console.log(cantidad)
     
@@ -58,7 +58,7 @@ const ItemCount = ({stock, initial}) => {
                         <button className='botonStock' onClick={() => itemCarrito('+')}>+</button>
                     </div>
                     <div className='flex-botones-compra'>
-                        <button className='btn-cart' onClick={ () => onAdd()}><NavLink to='/item/1'>Comprar</NavLink></button>
+                        <button className='btn-cart' onClick={ () => onAdd()}><NavLink to={`/item/:${id}`}>Comprar</NavLink></button>
                         <button className="btn-icon"><FontAwesomeIcon icon={faCartPlus} className=""/></button>
                         
                     </div>

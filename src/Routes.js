@@ -1,6 +1,7 @@
 import './App.css';
 import { ItemList } from './screens'
-import { itemDetailContainer } from './screens/itemDetailContainer/itemDetailContainer'
+import { ItemDetailContainer } from './screens/itemDetailContainer/itemDetailContainer'
+
 import { NoMatch } from './screens/NoMatch/noMatch';
 import React from "react";
 import {
@@ -19,7 +20,9 @@ function Routes() {
         <Switch>
           <Route exact path='/' component={ItemList}/>
           <Route path='/catalogo/:categoriaId' component={ NavBar }/>
-          <Route path='/item/1' component={ itemDetailContainer }/>
+          <Route path='/item/:itemId'>
+            <ItemDetailContainer></ItemDetailContainer>
+          </Route>
           <Route path='*' component={ NoMatch }/>    
         </Switch>
     </Router>

@@ -16,7 +16,7 @@ const Item = ({id, title, price, pictureUrl}) => {
             <p className='precioProducto'><b>$<span className='precio-span'>{price}</span></b> </p>
             </div>
             <div className='contadorProducto'>
-            <ItemCount stock={5} initial={1}/>
+            <ItemCount stock={5} initial={1} id={id}/>
             </div>   
         </div>
      
