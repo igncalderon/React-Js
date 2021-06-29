@@ -3,6 +3,7 @@ import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faCartPlus} from '@fortawesome/free-solid-svg-icons'
 import { NavLink } from 'react-router-dom'
+import { buyItem } from '../buyItem/buyItem'
 import '../home.css'
 
 let cantidad = 1;
@@ -60,7 +61,6 @@ const ItemCount = ({stock, initial, id}) => {
                     <div className='flex-botones-compra'>
                         <button className='btn-cart' onClick={ () => onAdd()}><NavLink to={`/item/:${id}`}>Comprar</NavLink></button>
                         <button className="btn-icon"><FontAwesomeIcon icon={faCartPlus} className=""/></button>
-                        
                     </div>
                     
             </div>

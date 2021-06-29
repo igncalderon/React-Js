@@ -2,9 +2,10 @@ import React, { useState } from 'react'
 import { Layout } from '../../components' // Si no existiera mi index.js exportando Layout, aca tendria que haber escrito '../../components/Layout'
 import { catalogo } from '../Home/itemList'
 import { useParams } from 'react-router-dom'
-
+import { Btn } from '../../components/button/button'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTruck } from '@fortawesome/free-solid-svg-icons'
+import { ItemCount } from '../Home/ItemCount/ItemCount'
 import {
     Carousel,
     CarouselItem,
@@ -42,6 +43,7 @@ const ItemDetailContainer = () => {
                                 <div className='envio'>
                                 <FontAwesomeIcon icon={faTruck} className="icon-truck"/>
                                 <h3>Envío Gratis</h3>
+                                <ItemCount stock={5} initial={1}></ItemCount>
                                 </div>
                                 
                             </div>
