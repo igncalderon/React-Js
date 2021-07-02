@@ -6,7 +6,8 @@
 }
 .flex-botones-stock{
    display: flex;
-   justify-content: center;
+   justify-content: start;
+   
    
 }
 .container-stock:hover{
@@ -29,6 +30,9 @@
    cursor: pointer;
    
 }
+.NavLink{
+   text-decoration: none
+}
 .contadorProducto{
   
    display: flex;
@@ -46,11 +50,13 @@
 }
 .flex-botones-compra{
    display: flex;   
-   justify-content: space-around;
-   margin: 10px;
+   justify-content: start;
+   gap: 10px;
+   margin-top: 20px;
+   width: 60%;
 }
 .btn-cart{
-   width: 40%;
+   width: 60%;
    font-size: 15px;
    font-weight: bolder;
    
@@ -77,9 +83,13 @@
    
 }
 .generalHome{
-   
+   background-image: url('https://fondosmil.com/fondo/28317.jpg');
+   opacity: 90%;
    display: flex;
    justify-content: center;
+   background-size: cover;
+   background-position: center center;
+   background-repeat: no-repeat;
 }
 .tituloProducto, .precioProducto{
    font-size: 18px;
@@ -87,6 +97,9 @@
    margin: 10px 0px;
   padding: 2px;
   
+}
+.stock-oculto{
+   display: none;
 }
 .tituloProducto {
    font-weight: bolder;

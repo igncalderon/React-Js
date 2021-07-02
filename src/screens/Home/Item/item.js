@@ -1,11 +1,10 @@
 import React from 'react'
 import { useState } from 'react'
 import '../home.css'
-import { ItemCount } from '../ItemCount/ItemCount'
 import { BuyItem } from '../buyItem/buyItem'
 
 
-const Item = ({id, title, price, pictureUrl}) => {
+const Item = ({id, title, price, pictureUrl, stock}) => {
                   
         return(
             
@@ -17,6 +16,8 @@ const Item = ({id, title, price, pictureUrl}) => {
             </div>
             <div className='contadorProducto'>
             <p className='precioProducto'><b>$<span className='precio-span'>{price}</span></b> </p>
+            <p className='stock-oculto'>{stock}</p>
+           
             {/* <ItemCount stock={5} initial={1} id={id}/> */}
             <BuyItem id={id}/>
             </div>   

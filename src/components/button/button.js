@@ -2,10 +2,10 @@
 import React from 'react'
 import './button.css'
 
-const Btn = () => { 
+const BtnPrincipal = ({texto}) => { 
     return(
-        <button>Comprar</button>
+        <button className='btnBuy'>{texto}</button>
     )
 }
 
-export {Btn}
+export { BtnPrincipal }

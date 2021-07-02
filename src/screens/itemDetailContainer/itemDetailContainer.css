@@ -7,6 +7,10 @@
     
     
 }
+.name-product{
+    font-size: 1.8em;
+    text-align: center;
+}
 .info-product{
     display: flex;
     flex-direction: column;
@@ -29,4 +33,11 @@
 .icon-truck{
     padding: 4px;
     font-size: 20px;
+}
+.card{
+    padding-top: 30px;
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    background-color: white;
 }

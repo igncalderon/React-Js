@@ -1,0 +1,28 @@
+.btnBuy {
+	background-color: rgb(6,3,57);
+    opacity: 80%;
+	border-radius:10px;
+	border:1px solid #15421a;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffffe7;
+	font-family:Arial;
+	font-size: 14px;
+	padding:5px 11px;
+    font-weight: lighter;
+	text-decoration:none;
+}
+.btnBuy:hover {
+	background-color:#2b5887;
+}
+.btnBuy:active {
+	position:relative;
+	top:1px;
+}
+.navlink{
+    text-decoration: none;
+    color:white;
+}
+.cantidad-detail{
+	
+}
